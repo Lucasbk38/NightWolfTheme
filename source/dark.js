@@ -955,7 +955,14 @@ export default function (colors) {
         'string.quoted.double',
         'string.template punctuation.definition.string',
         'punctuation.definition.string',
-
+      ],
+      settings: {
+        foreground: colors.string.hex(),
+      },
+    },
+    {
+      name: 'Escaped',
+      scope: [
         // Escape sequences like \e
         'constant.character.escape',
       ],
