@@ -8,7 +8,7 @@ colors.black = chroma(0, 0, 0)
 
 // Syntax Colors
 colors.syntaxRed = chroma(255, 120, 120)        // rgb(255, 120, 120)
-colors.syntaxRedIntense = chroma(255, 80, 180)  // rgb(255,80,120)
+colors.syntaxRedIntense = chroma(255, 80, 180)  // rgb(255, 80, 120)
 colors.syntaxOrange = chroma(255, 180, 130)     // rgb(255, 180, 130)
 colors.syntaxDarkOrange = chroma(255, 153, 102) // rgb(255, 153, 102)
 colors.syntaxYellow = chroma(255, 220, 150)     // rgb(255, 220, 150)
