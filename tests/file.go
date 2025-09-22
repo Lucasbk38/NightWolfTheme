@@ -117,7 +117,7 @@ func (a *accountHandler) GetAccountByID(response http.ResponseWriter, request *h
 	// Pass in parameter into domain layer
 	account, err := a.accountService.GetAccountByID(ctx, id)
 
-	// temp statement, just to remove go unused error
+	// Temp statement, just to remove go unused error
 	fmt.Println(account)
 
 	if err != nil {

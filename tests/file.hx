@@ -10,7 +10,7 @@ import flash.display.Sprite;
 
 class Main extends Sprite
 {
-    var foo:Int = 400; // single line comment
+    var foo:Int = 400; // Single line comment
     public static function main():Void
     {
         @metadata("argument")

@@ -19,9 +19,9 @@ Stream<double> computePi({int batch = 100000}) async* {
     var ratio = count / total;
     // Area of a circle is A = π⋅r², therefore π = A/r².
     // So, when given random points with x ∈ <0,1>,
-    // y ∈ <0,1>, the ratio of those inside a unit circle
-    // should approach π / 4. Therefore, the value of π
-    // should be:
+   // y ∈ <0,1>, the ratio of those inside a unit circle
+   // Should approach π / 4. Therefore, the value of π
+   // Should be:
     yield ratio * 4;
   }
 }

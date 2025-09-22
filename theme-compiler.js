@@ -4,7 +4,7 @@ const sourcePath = './source'
 const { files, folders } = getFilesAndFoldersFromPath(sourcePath)
 
 if (process.argv[2] === 'dev') {
-  for (let folder of [sourcePath, ...folders]) {
+  for (const folder of [sourcePath, ...folders]) {
     fs.watch(folder, async () => {
       try {
         await compile()
@@ -22,10 +22,10 @@ if (process.argv[2] === 'dev') {
 async function compile() {
   // Filter the array directly using the constant prefix
   const themeVersions = files.filter(
-    (path) => path.replace(sourcePath + '/', '').indexOf('/') === -1,
+    (path) => !path.replace(sourcePath + '/', '').includes('/'),
   )
 
-  for (let themeVersionPath of themeVersions) {
+  for (const themeVersionPath of themeVersions) {
     try {
       const [versionName] = themeVersionPath.replace('.js', '').split('/').slice(-1)
       const versionConstructor = await getImportDefault(themeVersionPath)
@@ -43,15 +43,15 @@ async function compile() {
         (path) => path.includes(versionName) && path.includes('/variants/'),
       )
 
-      for (let variantPath of variantsPaths) {
+      for (const variantPath of variantsPaths) {
         try {
           const [variantName] = variantPath.replace('.js', '').split('/').slice(-1)
           const variantFileName = `night-wolf-${variantName}`
           const variantFileNameNi = `${variantFileName}-noitalics`
           const variantModifier = await getImportDefault(variantPath)
           const baseColors = await getImportDefault(colorsPath)
-          const varianColors = variantModifier(baseColors)
-          const syntaxColors = syntaxModifier(varianColors)
+          const variantColors = variantModifier(baseColors)
+          const syntaxColors = syntaxModifier(variantColors)
           const variant = versionConstructor(syntaxColors)
 
           const variantStringified = JSON.stringify({ name: variantFileName, ...variant })
@@ -77,7 +77,13 @@ async function compile() {
   console.info('')
 }
 
+/**
+ * @param {string} path
+ */
 function getFilesAndFoldersFromPath(path) {
+  /**
+   * @type {{ files: string[], folders: string[] }}
+   */
   const result = { files: [], folders: [] }
   const subPaths = fs.readdirSync(path)
   subPaths.forEach((subPath) => {
@@ -94,6 +100,9 @@ function getFilesAndFoldersFromPath(path) {
   return result
 }
 
+/**
+ * @param {string} path 
+ */
 async function getImportDefault(path) {
   return (await import(`${path}?t=${Date.now()}&r=${Math.random()}`)).default
 }

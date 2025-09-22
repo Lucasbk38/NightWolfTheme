@@ -533,7 +533,7 @@ public class JavaSyntaxTest extends BaseClass implements Calculable<Integer>, Ru
                 case Circle c -> "Circle radius " + c.radius;
                 case Rectangle r -> "Rectangle " + r.width + "x" + r.height;
                 case Square sq -> "Square side " + sq.side;
-                // no default needed if sealed class covers all permitted types
+                // No default needed if sealed class covers all permitted types
             };
             out.println("  Description: " + description);
             */
@@ -568,7 +568,7 @@ public class JavaSyntaxTest extends BaseClass implements Calculable<Integer>, Ru
 
         // --- Modules Note ---
         // For Java 9+ Modules, you would typically have a module-info.java file
-        // in the root of your source directory, e.g.:
+        // In the root of your source directory, e.g.:
         /*
         module com.example.syntaxtest {
             requires java.base; // Implicitly required

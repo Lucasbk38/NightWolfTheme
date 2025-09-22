@@ -146,24 +146,24 @@ h1 {
 div {
   color: #00ff00;
 
-  // nested rules
+  // Nested rules
   #inner.element {
     color: #000000;
   }
 
-  // parent selector
+  // Parent selector
   &:hover {
     text-decoration: underline !important;
   }
   body.firefox & {
     font-weight: normal;
   }
-  &__element, // compound selector
+  &__element, // Compound selector
     &--modifier {
     border: 1px;
   }
 
-  // nested properties
+  // Nested properties
   font: {
     family: fantasy;
     size: 30em;
@@ -190,8 +190,8 @@ $parens-spaces-list: (left top);
 $parens-commas-list: (1px, 2px, 3px, 4px);
 $no-parens-spaces-list: 1px 2px 3px 4px;
 $no-parens-commas-list: arial, some-other-arial, sans-serif;
-$trailing-comma: (1 2 3); // a comma-separated list containing a space-separated list
-$bracketed-list: [5rem 6rem 7rem]; // comma or space separated
+$trailing-comma: (1 2 3); // A comma-separated list containing a space-separated list
+$bracketed-list: [5rem 6rem 7rem]; // Comma or space separated
 $map: (
   medium: 640,
   'large': 960,
@@ -200,7 +200,7 @@ $map: (
       xx-large,
     ):
     1600,
-); // must have parentheses, be comma separated
+); // Must have parentheses, be comma separated
 $color: #fe57a1;
 $function-reference: get-function($function-name);
 
@@ -208,13 +208,13 @@ $function-reference: get-function($function-name);
 $var: 1 !default;
 
 #main {
-  // global variable defined in block
+  // Global variable defined in block
   $width: 5em !global;
 
-  // list of parent selectors
+  // List of parent selectors
   $selectors: &;
 
-  // property value
+  // Property value
   width: $width;
 }
 
@@ -266,29 +266,29 @@ $var: 1 !default;
  */
 
 body {
-  // arithmetic operators
+  // Arithmetic operators
   width: (1px + (2em - 3rem)) * (4 / 5vh) % 6cm;
 
-  // plain css
+  // Plain css
   font: 10px/8px;
   font: (italic bold 10px/8px);
   font: #{$font-size}/#{$line-height};
 
-  // division
+  // Division
   width: $width/2;
   width: round(1.5) / 2;
   width: (500px/2);
   width: 5px + 8px/2px;
 
-  // minus sign
-  animation-name: a-1; // identifier
-  margin: (5px - 3px) 5px-3px 3-2 (1 -$var); // subtraction
-  margin: 1 -3em; // negative number
-  margin: -$var - (1); // unary negation
+  // Minus sign
+  animation-name: a-1; // Identifier
+  margin: (5px - 3px) 5px-3px 3-2 (1 -$var); // Subtraction
+  margin: 1 -3em; // Negative number
+  margin: -$var - (1); // Unary negation
 
-  // string concatenation
-  content: 'Foo ' + Bar; // "Foo Bar"
-  font-family: sans- + 'serif'; // sans-serif
+  // String concatenation
+  content: 'Foo ' + Bar;  // "Foo Bar"
+  font-family: sans- + 'serif'; // Sans-serif
 }
 
 // string concatenation in string-only context
@@ -326,17 +326,17 @@ d#{'i'}v,
 :not(#{'div'}),
 #{'%placeholder'},
 %pla#{'ceho'}lder {
-  // property name
+  // Property name
   #{'font'}: serif;
   background-#{'image'}: none;
   border-#{'bottom'}-width: 0;
 
-  // property value
+  // Property value
   font-size: #{$font-size};
   font-family: #{'arial, sans'}-serif;
   width: #{5 * (3 - 1)}px;
 
-  // function name
+  // Function name
   background: #{'url' }('image.png');
   background: u#{'r'}l('image.png');
 
@@ -344,13 +344,13 @@ d#{'i'}v,
   width: 0 #{'!important'};
   width: 0 #{'!import'}ant;
 
-  // inside strings
+  // Inside strings
   content: '#{$var}';
   content: '#{$var}';
 
-  // inside comments
+  // Inside comments
   /* multi-line: #{$yes} */
-  // single line: #{$no}
+  // Single line: #{$no}
 }
 
 // media type, feature test
@@ -362,7 +362,7 @@ d#{'i'}v,
 // font name, font feature custom name, font feature value
 @font-feature-values #{'Font One'} {
   @styleset {
-    // interpolation not accepted here?
+    // Interpolation not accepted here?
     #{'nice-style'}: #{12};
   }
 }
@@ -388,7 +388,7 @@ d#{'i'}v,
   margin: 0;
 
   @left-top {
-    // interpolation not accepted here?
+    // Interpolation not accepted here?
     content: '';
   }
 }
@@ -422,10 +422,10 @@ d#{'i'}v,
  */
 
 body {
-  // single line comments not parsed inside url()
+  // Single line comments not parsed inside url()
   background: url(http://example.com/styles.css);
 
-  // keyword arguments
+  // Keyword arguments
   color: hsl($hue: 0, $saturation: 100%, $lightness: 50%);
 }
 
@@ -434,10 +434,10 @@ body {
  */
 
 // @import
-@import 'rounded-corners', 'text-shadow'; // multiple files
+@import 'rounded-corners', 'text-shadow'; // Multiple files
 #main {
-  // nested @import
-  @import 'example'; // but not inside mixins or control directives
+  // Nested @import
+  @import 'example'; // But not inside mixins or control directives
 }
 
 // nested @media
@@ -453,10 +453,10 @@ body {
 #main {
   @extend #hello;
 
-  // no error if not found
+  // No error if not found
   @extend .from[the='other-side'] !optional;
 
-  // placeholder selector
+  // Placeholder selector
   @extend div%placeholder;
 }
 
@@ -469,7 +469,7 @@ body {
 @media screen {
   @supports (font-variant-alternates: styleset(nice-style)) {
     @at-root (without: media supports) {
-      // with query
+      // With query
       .absolutely-top-level {
         background: pink;
       }
@@ -519,18 +519,18 @@ $i: 6;
   font-size: 128px;
 }
 @mixin sexy-border($color, $width: 1in) {
-  // with arguments, default value
+  // With arguments, default value
   border: {
     color: $color;
     width: $width;
   }
 }
 @mixin box-shadow($shadows...) {
-  // variable arguments
+  // Variable arguments
   box-shadow: $shadows;
 }
 @mixin apply-to-ie6-only {
-  // accepts content block
+  // Accepts content block
   * html {
     @content;
   }
@@ -541,16 +541,16 @@ $i: 6;
   @include large-text;
 }
 p {
-  @include sexy-border(blue); // with arguments
+  @include sexy-border(blue); // With arguments
 }
 div {
-  @include sexy-border($color: blue, $width: 10cm); // keyword arguments
+  @include sexy-border($color: blue, $width: 10cm); // Keyword arguments
 }
 .primary {
-  @include box-shadow($shadows...); // expand list into arguments
+  @include box-shadow($shadows...); // Expand list into arguments
 }
 @include apply-to-ie6-only {
-  // passing content block
+  // Passing content block
   display: block;
 
   #main {
@@ -571,7 +571,7 @@ div {
  */
 
 .declarations-or-selectors {
-  // declarations
+  // Declarations
   display: block;
   font-family: arial;
   font: {
@@ -589,10 +589,10 @@ div {
   color: #000;
   width: #{$width};
 
-  // incorrectly highlighted declarations
+  // Incorrectly highlighted declarations
   display: block;
 
-  // selectors
+  // Selectors
   input:focus {
     opacity: 0.5;
   };
@@ -1241,7 +1241,7 @@ $my-colors: (
 .element-no-fallback {
   // Try to get non-existent key, no fallback provided (function returns null)
   // Note: Setting a CSS property to 'null' might render differently or be invalid
-  // depending on the property. Often used internally in other mixins/functions.
+  // Depending on the property. Often used internally in other mixins/functions.
   border-top-color: get-theme-color("border-fancy", $my-colors);
 }
 

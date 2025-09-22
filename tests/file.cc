@@ -75,7 +75,7 @@ struct MyAllocationCallbacks {};
 struct MyDeviceMemory {};
 struct MyAllocateInfo {
     size_t allocationSize;
-    // other members...
+    // Other members...
 };
 
 // A dummy enum to represent a result code

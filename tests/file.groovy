@@ -31,7 +31,7 @@ def slashy = /Slashy string.
     Interpolation works: $X ${-> X}
     Dollars $ and backslashes \ on their own are interpreted literally./
 
-def notSlashy = 1 /2/ 3 // not a slashy string; just two division operators
+def notSlashy = 1 /2/ 3 // Not a slashy string; just two division operators
 
 def dollarSlashy = $/Dollar slashy string.
 
@@ -39,11 +39,11 @@ def dollarSlashy = $/Dollar slashy string.
     Interpolation works: $_ ${true}
     Dollars $ and backslashes \ on their own are interpreted literally./$
 
-0b10i + 0b0110_1011 // binary numbers
-0 + 123L + 456_789 // decimal numbers
-0xab + 0xcd_efG // hexadecimal numbers
+0b10i + 0b0110_1011 // Binary numbers
+0 + 123L + 456_789 // Decimal numbers
+0xab + 0xcd_efG // Hexadecimal numbers
 
-01_23.45_67g + 1e-23f + 2d + 08.80 // floating-point numbers
+01_23.45_67g + 1e-23f + 2d + 08.80 // Floating-point numbers
 
 trait Test {
     void foo(List list) {

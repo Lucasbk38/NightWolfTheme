@@ -224,10 +224,10 @@ switch (day) {
   case 4:
   case 5:
     console.log('Weekday')
-    break // break applies to the grouped cases
+    break // Break applies to the grouped cases
   default:
     console.log('Invalid day')
-  // no break needed for default if it's the last case
+  // No break needed for default if it's the last case
 }
 
 // For loop
@@ -590,8 +590,8 @@ Promise.all([p1, p2]).then((results) => console.log('Promise.all success:', resu
 Promise.all([p1, p2, p3]).catch((error) => console.error('Promise.all failure:', error)) // Error in p3
 
 Promise.race([p2, p3])
-  .then((result) => console.log('Promise.race success:', result)) // depends on timing
-  .catch((error) => console.error('Promise.race failure:', error)) // depends on timing
+  .then((result) => console.log('Promise.race success:', result)) // Depends on timing
+  .catch((error) => console.error('Promise.race failure:', error)) // Depends on timing
 
 // --- 14. Error Handling ---
 try {
@@ -742,7 +742,7 @@ console.log('mySet.size:', mySet.size) // Output: 3 (number of unique elements)
 function AjaxRequest(url) {
   var urls = ['www.cnn.com', 5, globalVar]
   this.request = new XMLHttpRequest()
-  url = url.replace(/^\s*(.*)/, '$1') // skip leading whitespace
+  url = url.replace(/^\s*(.*)/, '$1') // Skip leading whitespace
   /* check the url to be in urls */
   var a = 'aldskfs;ldkfsd;lfksd f;ls'
   this.foo = new (function () {})()
@@ -797,7 +797,7 @@ outerLoop: for (let i = 0; i < 3; i++) {
     if (i === 1 && j === 1) {
       console.log('    Continuing outer loop!')
       continue outerLoop // Skips the rest of outer loop's current iteration (i=1)
-      // and goes directly to the next iteration (i=2)
+      // And goes directly to the next iteration (i=2)
     }
     console.log(` Inner loop: i=<span class="math-inline">\{i\}, j\=</span>{j}`)
   }
@@ -897,8 +897,8 @@ export default {
 var pattern =
   /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-var person = { firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue' }
-delete person.age
+var john = { firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue' }
+delete john.age
 
 var cars = ['Saab', 'Volvo', 'BMW']
 'Saab' in cars

@@ -118,7 +118,7 @@ $rightShift = $bits1 >> 1;
 // Comparison
 $isEqual = ($sum == 8); // Loose comparison
 $isIdentical = ($sum === 8); // Strict comparison
-$isNotEqual = ($sum != 9); // or <>
+$isNotEqual = ($sum != 9); // Or <>
 $isNotIdentical = ($sum !== '8');
 $isGreater = $sum > 5;
 $spaceship = $sum <=> 10; // Spaceship operator (-1, 0, or 1) (PHP 7.0+)

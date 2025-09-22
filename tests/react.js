@@ -169,7 +169,7 @@ ErrorBoundary.propTypes = {
 
 // 7. Basic Functional Component with Props & PropTypes
 function Greeting({ name, messageCount = 0, user }) {
-  // Use context
+  // use context
   const theme = useContext(ThemeContext)
   const currentUser = useContext(UserContext) // Can be null if not provided
 

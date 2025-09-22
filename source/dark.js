@@ -20,14 +20,14 @@ export default function (colors) {
     'widget.shadow': colors.black.hex() + '30',
     // Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal).
     'selection.background': colors.selection_2.hex(),
-    // labels in the welcome page
+    // Labels in the welcome page
     descriptionForeground: colors.text.hex(),
     // Overall foreground color for error messages
     errorForeground: colors.danger.hex(),
 
-    'icon.foreground': colors.text.hex(), //The default color for icons in the workbench.
+    'icon.foreground': colors.text.hex(),// The default color for icons in the workbench.
 
-    'sash.hoverBorder': colors.principal_3.hex(), //The hover border color for draggable borders.
+    'sash.hoverBorder': colors.principal_3.hex(),// The hover border color for draggable borders.
 
     'window.activeBorder': colors.principal.hex(), // Border color for the active (focused) window.
     'window.inactiveBorder': colors.principal.hex(), // Border color for the inactive (unfocused) windows.
@@ -44,103 +44,103 @@ export default function (colors) {
     'textCodeBlock.background': colors.principal_0.hex(),
     // Foreground color for preformatted text segments.
     'textPreformat.foreground': colors.text.hex(),
-    // color for text separators.
+   // Color for text separators.
     'textSeparator.foreground': colors.principal_0.hex(),
 
-    // color of the editor selection.
+   // Color of the editor selection.
     'editor.selectionBackground': colors.selection_4.hex(),
     'editor.selectionForeground': colors.text.hex(),
-    // cuando selecciono parcialmente una palabra y vscode selecciona todo
+    // When you select part of a word and VSCode highlight the whole word
     'editor.wordHighlightStrongBackground': colors.selection_1.hex(),
     'editor.wordHighlightStrongBorder': null,
-    // palabras iguales a la seleccion
+    // Words in document that are the same as the one currently selected
     'editor.selectionHighlightBackground': colors.selection_0.hex(),
     'editor.selectionHighlightBorder': colors.selection_2.hex(),
-    // palabras completas iguales a la seleccion
+    // When you select part of a word and VSCode highlight the whole word in other parts of the document
     'editor.wordHighlightBackground': colors.selection_1.hex(),
     'editor.wordHighlightBorder': colors.selection_3.hex(),
 
-    // cuando ubico el puntero encima de una palabra
+    // When you have you pointer over a word
     'editor.hoverHighlightBackground': colors.selection_1.hex(),
 
-    // color of the selection in an inactive editor.
+   // Color of the selection in an inactive editor.
     'editor.inactiveSelectionBackground': colors.selection_1.hex(),
 
-    // color de la linea en la que el cursor esta ubicado
+    // Color of the line on which the cursor is located
     'editor.lineHighlightBackground': colors.selection_0.hex(),
     'editor.lineHighlightBorder': null,
 
-    // palabra seleccionada por el finder
+    // Word selected by "<ctrl> + F"
     'editor.findMatchBackground': colors.selection_0.hex(),
     'editor.findMatchBorder': colors.principal_5.hex(),
     'editor.findMatchHighlightBorder': colors.selection_3.hex(),
 
-    // todas las palabras encontradas por el finder
+    // All the words found by "<ctrl> + F"
     'editor.findMatchHighlightBackground': colors.selection_1.hex(),
 
     // Border color the range limiting the search (Enable 'Find in Selection' in the find widget).
     'editor.findRangeHighlightBackground': colors.selection_0.hex(),
     'editor.findRangeHighlightBorder': null,
 
-    // fondo de la linea completa cuando se busca
+    // Background when "<ctrl> + <shift> + F"
     'editor.rangeHighlightBackground': colors.selection_0.hex(),
     'editor.rangeHighlightForeground': colors.text.hex(),
 
-    // placeholder de inputs del editor
+   // Placeholder de inputs del editor
     'editor.placeholder.foreground': colors.principal_4.hex(),
 
     // 'editor.compositionBorder': colors.testB.hex(),
 
-    // cuando me paro en un bracket me muestar los dos con este color
-    'editorBracketMatch.background': null, //colors.principal_0.hex(),
+    // When you are over a bracket and VSCode highlights the matching one
+    'editorBracketMatch.background': null, // Colors.principal_0.hex(),
     'editorBracketMatch.border': colors.principal_4.hex(),
 
-    // cuando se activa la viusualizacion de los whitespaces
+    // Whitespaces color (when visible)
     'editorWhitespace.foreground': colors.principal_1.hex(),
 
-    // linea vertical que indica la indentacion
+    // Vertical line indicating indentation
     'editorIndentGuide.background': colors.principal_1.hex(),
     'editorIndentGuide.activeBackground': colors.principal_3.hex(),
 
-    // la linea vertical en el codigo super fastidiosa!
+    // VSCode ruler (when activated in the settings by "editor.rulers": [...])
     'editorRuler.foreground': colors.principal_1.hex(),
 
-    // vscode codelens
+   // VSCode codelens
     'editorCodeLens.foreground': colors.infoLight.hex(),
 
-    // editor states
+   // Editor states
     'editorError.foreground': colors.danger.hex(),
     'editorError.border': null,
     'editorWarning.foreground': colors.warning.hex(),
     'editorWarning.border': null,
 
-    // el editor gutter es la parte donde esta el numero de linea y las indicaciones de git dentro del archivo
+    // The gutter editor is the part where the line number and git instructions are inside the file
     'editorGutter.background': colors.interBackground.hex(),
     'editorGutter.modifiedBackground': colors.warning.hex(),
     'editorGutter.addedBackground': colors.success.hex(),
     'editorGutter.deletedBackground': colors.danger.hex(),
 
-    // el widget como el find and replace
+    // A widget like find and replace
     'editorWidget.foreground': colors.text.hex(),
     'editorWidget.background': colors.principal_0.hex(),
     'editorWidget.border': colors.principal_2.hex(),
     'editorWidget.resizeBorder': colors.infoLight.hex(),
 
-    // el cuadro que sale cuando estamos escribiendo proponiendo opciones
+    // The box that appears when we are writing suggesting options (like IntelliSense)
     'editorSuggestWidget.background': colors.principal_0.hex(),
     'editorSuggestWidget.border': colors.principal_1.hex(),
     'editorSuggestWidget.foreground': colors.principal_5.hex(),
     'editorSuggestWidget.highlightForeground': colors.syntaxYellow.hex(),
     'editorSuggestWidget.selectedBackground': colors.principal_1.hex(),
 
-    // el cuadro que sale cuando ubico el cursor encima de un palabra importante
+    // The box that appears when you place the cursor over an important word
     'editorHoverWidget.background': colors.principal_0.hex(),
     'editorHoverWidget.border': colors.principal_1.hex(),
     'editorHoverWidget.foreground': colors.text.hex(),
     'editorHoverWidget.highlightForeground': colors.syntaxOrange.hex(),
     'editorHoverWidget.statusBarBackground': colors.principal_1.hex(),
 
-    // el cuadro que sale cuando hago click en 'Peek Problem' en el editorHoverWidget
+    // The box that appears when you click on "Peek Problem" in the editorHoverWidget
     'editorMarkerNavigation.background': colors.principal_0.hex(),
     'editorMarkerNavigationInfo.background': colors.info.hex(),
     'editorMarkerNavigationError.background': colors.danger.hex(),
@@ -151,7 +151,7 @@ export default function (colors) {
     'toolbar.hoverOutline': null, // Toolbar outline when hovering over actions using the mouse
     'toolbar.activeBackground': colors.principal_3.hex(), // Toolbar background when holding the mouse over actions
 
-    // Botones
+    // Buttons
     'button.foreground': colors.white.hex(),
     'button.background': colors.contrast.hex(),
     'button.border': null,
@@ -177,18 +177,19 @@ export default function (colors) {
     // 'radio.inactiveBorder': colors.testB.hex(),
     // 'radio.inactiveHoverBackground': colors.testB.hex(),
 
-    // Botones de las extenciones
+    // Extension buttons
     'extensionButton.prominentForeground': colors.white.hex(),
     'extensionButton.prominentBackground': colors.contrast.hex(),
     'extensionButton.prominentHoverBackground': colors.contrastDark.hex(),
 
-    // inputs
+    // Inputs
     // Dropdowns
-    // el background del cuadro del input no del menu como tal
+    // The background of the input box, not the menu itself
     'dropdown.background': colors.principal_0.hex(),
     'dropdown.border': colors.principal_0.hex(),
     'dropdown.foreground': colors.text.hex(),
     'dropdown.listBackground': colors.principal_0.hex(),
+
     // Inputs text
     'input.background': colors.principal.hex(),
     'input.border': colors.principal_1.hex(),
@@ -247,27 +248,27 @@ export default function (colors) {
     // Drag and drop feedback color for the side bar sections. The color should have transparency so that the side bar sections can still shine through. The side bar is the container for views like explorer and search.
     'sideBar.dropBackground': null,
 
-    // Barra de la izquierda
+    // Left bar
     // Colors for list and trees like the File Explorer.
-    // cuando hago click en un archivo
+    // When you click on a file
     'list.activeSelectionBackground': colors.principal_2.hex(),
     'list.activeSelectionForeground': colors.text.hex(),
     'list.focusAndSelectionOutline': colors.principal_3.hex(),
     'list.focusOutline': colors.principal_3.hex(),
-    // cuando me ubico con el cursor en los archivos
+    // When you place the cursor on the files
     'list.hoverBackground': colors.principal_0.hex(),
     'list.hoverForeground': colors.principal_5.hex(),
-    // cuando ya no estoy ubicado en el list tree ej. cuando estoy editando un archivo
+    // When you are no longer located in the list tree, e.g. when you are editing a file
     'list.inactiveSelectionBackground': colors.principal_1.hex(),
     'list.inactiveSelectionForeground': colors.text.hex(),
     'list.inactiveFocusOutline': colors.principal_1.hex(),
     'list.inactiveSelectionIconForeground': colors.text.hex(),
-    // Cuando selecciono un archivo con el teclado
+    // When you select a file with the keyboard
     'list.focusBackground': colors.principal_0.hex(),
     'list.focusForeground': colors.principal_5.hex(),
     // List/Tree foreground color for invalid items, for example an unresolved root in explorer.
     'list.invalidItemForeground': colors.contrastDark.hex(),
-    // cuando arrstro un archivo o carpeta a otra carpeta
+    // When you drag a file or folder to another folder
     'list.dropBackground': colors.principal_2.hex(),
     // List/Tree foreground color of the match highlights when searching inside the list/tree.
     'list.highlightForeground': colors.principal_5.hex(),
@@ -296,7 +297,7 @@ export default function (colors) {
     // 'tree.tableColumnsBorder': colors.testA.hex(),
     // 'tree.tableOddRowsBackground': colors.testA.hex(),
 
-    // Activity bar es la primera barra de iconos de la izquierda
+    // Activity bar is the first icon bar on the left
     // Activity Bar background color.
     'activityBar.background': colors.interBackground.hex(),
     // Drag and drop feedback color for the Activity Bar items.
@@ -330,7 +331,7 @@ export default function (colors) {
     'activityBarTop.activeBackground': colors.principal_1.hex(),
 
     // Editor Groups are the containers of editors. There can be many editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
-    // color to separate multiple editor groups from each other.
+    // Color to separate multiple editor groups from each other.
     'editorGroup.border': colors.interBorder.hex(),
     // Background color when dragging editors around.
     'editorGroup.dropBackground': colors.contrast.hex() + '70',
@@ -341,7 +342,7 @@ export default function (colors) {
     // Border color of the editor group title header when tabs are enabled.
     'editorGroupHeader.tabsBorder': colors.interBorder.hex(),
 
-    // Las pestanas de los archivos abiertos
+    // Tabs of open files
     'tab.border': colors.interBorder.hex(),
     'tab.hoverBorder': null, // Border to highlight tabs when hovering
     'tab.hoverBackground': colors.principal_1.hex(), // Tab background color when hovering
@@ -365,7 +366,7 @@ export default function (colors) {
     'tab.unfocusedInactiveModifiedBorder': colors.warningLight.hex() + 50, // Border on the top of modified (dirty) inactive tabs in an unfocused group.
     'editorPane.background': null, // Background color of the editor pane visible on the left and right side of the centered editor layout.
 
-    // barra de menus
+    // Barra de menus
     'menubar.selectionForeground': colors.text.hex(),
     'menubar.selectionBackground': colors.principal_1.hex(),
     'menubar.selectionBorder': null,
@@ -378,30 +379,30 @@ export default function (colors) {
 
     // Minimap
     'minimap.findMatchHighlight': colors.success.hex(), // Highlight color for matches from search within files.
-    'minimap.selectionHighlight': colors.contrast.hex(), //Highlight color for the editor selection.
-    'minimap.errorHighlight': colors.danger.hex(), //Highlight color for errors within the editor.
-    'minimap.warningHighlight': colors.warning.hex(), //Highlight color for warnings within the editor.
-    'minimap.background': colors.principal.hex(), //Minimap background color.
-    'minimapSlider.background': colors.principal_3.hex() + 60, //Minimap slider background color.
-    'minimapSlider.hoverBackground': colors.principal_2.hex() + 60, //Minimap slider background color when hovering.
-    'minimapSlider.activeBackground': colors.principal_4.hex() + 60, //Minimap slider background color when clicked on.
-    'minimapGutter.addedBackground': colors.success.hex(), //Minimap gutter color for added content.
-    'minimapGutter.modifiedBackground': colors.warning.hex(), //Minimap gutter color for modified content.
-    'minimapGutter.deletedBackground': colors.danger.hex(), //Minimap gutter color for deleted content.
+    'minimap.selectionHighlight': colors.contrast.hex(), // Highlight color for the editor selection.
+    'minimap.errorHighlight': colors.danger.hex(), // Highlight color for errors within the editor.
+    'minimap.warningHighlight': colors.warning.hex(), // Highlight color for warnings within the editor.
+    'minimap.background': colors.principal.hex(), // Minimap background color.
+    'minimapSlider.background': colors.principal_3.hex() + 60, // Minimap slider background color.
+    'minimapSlider.hoverBackground': colors.principal_2.hex() + 60, // Minimap slider background color when hovering.
+    'minimapSlider.activeBackground': colors.principal_4.hex() + 60, // Minimap slider background color when clicked on.
+    'minimapGutter.addedBackground': colors.success.hex(), // Minimap gutter color for added content.
+    'minimapGutter.modifiedBackground': colors.warning.hex(), // Minimap gutter color for modified content.
+    'minimapGutter.deletedBackground': colors.danger.hex(), // Minimap gutter color for deleted content.
 
-    // git in editor interfece
+    // Git in editor interface
     'diffEditor.diagonalFill': colors.principal_1.hex(),
     'diffEditor.border': null,
-    'diffEditor.insertedTextBackground': colors.success.hex() + '30', // background of the text
-    'diffEditor.removedTextBackground': colors.danger.hex() + '30', // background of the text
+    'diffEditor.insertedTextBackground': colors.success.hex() + '30', // Background of the text
+    'diffEditor.removedTextBackground': colors.danger.hex() + '30', // Background of the text
     'diffEditor.insertedTextBorder': null, // Border color for inserted text in the diff editor.
     'diffEditor.removedTextBorder': null, // Border color for removed text in the diff editor.
-    'diffEditor.insertedLineBackground': colors.success.hex() + '10', // background of the line
-    'diffEditor.removedLineBackground': colors.danger.hex() + '10', // background of the line
-    'diffEditorGutter.insertedLineBackground': colors.success.hex() + '15', // line count indicator
-    'diffEditorGutter.removedLineBackground': colors.danger.hex() + '15', // line count indicator
-    'diffEditorOverview.insertedForeground': colors.success.hex() + '80', // mini map colors
-    'diffEditorOverview.removedForeground': colors.danger.hex() + '80', // mini map colors
+    'diffEditor.insertedLineBackground': colors.success.hex() + '10', // Background of the line
+    'diffEditor.removedLineBackground': colors.danger.hex() + '10', // Background of the line
+    'diffEditorGutter.insertedLineBackground': colors.success.hex() + '15', // Line count indicator
+    'diffEditorGutter.removedLineBackground': colors.danger.hex() + '15', // Line count indicator
+    'diffEditorOverview.insertedForeground': colors.success.hex() + '80', // Mini map colors
+    'diffEditorOverview.removedForeground': colors.danger.hex() + '80', // Mini map colors
     'diffEditor.unchangedRegionBackground': colors.principal_0.hex(),
     'diffEditor.unchangedRegionForeground': colors.principal_5.hex(),
     'diffEditor.unchangedRegionShadow': null,
@@ -415,7 +416,7 @@ export default function (colors) {
     'debugExceptionWidget.background': colors.principal.hex(),
     'debugExceptionWidget.border': colors.interBorder.hex(),
 
-    // cuando selecciono una palabra y doy shift + f12
+    // When you select a word and press <shift> + <F12>
     'peekView.border': colors.infoLight.hex(),
     'peekViewEditor.background': colors.principal.hex(),
     'peekViewEditorGutter.background': colors.principal.hex(),
@@ -442,55 +443,55 @@ export default function (colors) {
     'merge.commonContentBackground': colors.warningLight.hex() + '50',
     'merge.commonHeaderBackground': null,
 
-    // color en el scroll
+    // Scroll colors
     'editorOverviewRuler.currentContentForeground': colors.contrast.hex(),
     'editorOverviewRuler.incomingContentForeground': colors.contrast.hex(),
     'editorOverviewRuler.commonContentForeground': colors.contrast.hex(),
 
-    // Overview ruler: This ruler is located beneath the scroll bar on the right edge of the editor and gives an overview of the decorations in the editor.
-    // color of the overview ruler border.
+    // Overview ruler: This ruler is located beneath the scroll bar on the right edge of the editor and gives an overview of the decorations in the editor
+    // Color of the overview ruler border
     'editorOverviewRuler.border': null,
-    // Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations.
+    // Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations
     'editorOverviewRuler.findMatchForeground': colors.principal_1.hex(),
-    // Overview ruler marker color for highlighted ranges, like by the Quick Open, Symbol in File and Find features. The color must not be opaque so as not to hide underlying decorations.
+    // Overview ruler marker color for highlighted ranges, like by the Quick Open, Symbol in File and Find features. The color must not be opaque so as not to hide underlying decorations
     'editorOverviewRuler.rangeHighlightForeground': colors.principal_3.hex(),
-    // Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations.
+    // Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations
     'editorOverviewRuler.selectionHighlightForeground': colors.principal_2.hex(),
-    // Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying decorations.
+    // Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying decorations
     'editorOverviewRuler.wordHighlightForeground': colors.principal_4.hex(),
-    // Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide underlying decorations.
+    // Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide underlying decorations
     'editorOverviewRuler.wordHighlightStrongForeground': colors.principal_4.hex(),
-    // Overview ruler marker color for modified content.
+    // Overview ruler marker color for modified content
     'editorOverviewRuler.modifiedForeground': colors.warningLight.hex(),
-    // Overview ruler marker color for added content.
+    // Overview ruler marker color for added content
     'editorOverviewRuler.addedForeground': colors.successLight.hex(),
-    // Overview ruler marker color for deleted content.
+    // Overview ruler marker color for deleted content
     'editorOverviewRuler.deletedForeground': colors.danger.hex(),
-    // Overview ruler marker color for errors.
+    // Overview ruler marker color for errors
     'editorOverviewRuler.errorForeground': colors.danger.hex(),
-    // Overview ruler marker color for warnings.
+    // Overview ruler marker color for warnings
     'editorOverviewRuler.warningForeground': colors.warning.hex(),
-    // Overview ruler marker color for infos.
+    // Overview ruler marker color for infos
     'editorOverviewRuler.infoForeground': colors.info.hex(),
-    // Overview ruler marker color for matching brackets.
+    // Overview ruler marker color for matching brackets
     'editorOverviewRuler.bracketMatchForeground': colors.principal_2.hex(),
 
     'editor.findMatchBackground': colors.principal_2.hex(),
     'editor.findMatchForeground': null,
     'editor.findMatchHighlightForeground': null,
 
-    // when ctrl + click on a symbol`
+   // When <ctrl> + <click> on a symbol`
     'editor.symbolHighlightBackground': colors.principal_0.hex(),
     'editor.symbolHighlightBorder': colors.success.hex(),
 
-    // palabras completas iguales a la seleccion
+    // Full words matching selection
     'editor.wordHighlightTextBackground': colors.principal_1.hex(),
     'editor.wordHighlightTextBorder': colors.principal_3.hex(),
 
     // While you’re typing, both the opening and closing tags <> </> are highlighted
     'editor.linkedEditingBackground': colors.principal_0.hex(),
 
-    // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
+    // Panels are shown below the editor area and contain views like Output and Integrated Terminal
     'panel.background': colors.principal.hex(),
     'panel.border': colors.interBorder.hex(),
     'panelTitle.activeBorder': colors.contrast.hex(),
@@ -516,7 +517,7 @@ export default function (colors) {
     'statusBar.noFolderBackground': colors.principal.hex(),
     'statusBar.noFolderBorder': colors.contrast.hex(),
 
-    // cauando doy click en los botones de la barra (onClick)
+    // When you click on the buttons on the bar (onClick)
     'statusBarItem.activeBackground': colors.principal_0.hex(),
     'statusBarItem.hoverBackground': colors.principal_1.hex(),
     'statusBarItem.prominentBackground': colors.principal_3.hex(),
@@ -546,9 +547,9 @@ export default function (colors) {
     'notifications.border': colors.interBorder.hex(),
     'notificationLink.foreground': colors.contrast.hex(),
 
-    // extra textos en el Command Palette
+    // Extra textos en el Command Palette
     'pickerGroup.foreground': colors.text.hex(),
-    // separador en el Command Palette
+    // Command Palette separator
     'pickerGroup.border': colors.interBorder.hex(),
 
     'debugToolBar.background': colors.principal_0.hex(),
@@ -673,7 +674,7 @@ export default function (colors) {
     // 'inlineChatDiff.removed': colors.testA.hex(),
 
     // TESTING
-    'testing.iconQueued': colors.yellowPastel.hex(), // icon color when the test is queued
+    'testing.iconQueued': colors.yellowPastel.hex(), // Icon color when the test is queued
     'testing.iconPassed': colors.successLight.hex(),
     'testing.iconErrored': colors.dangerLight.hex(),
     'testing.iconFailed': colors.dangerLight.hex(),
@@ -911,7 +912,7 @@ export default function (colors) {
 
   const general = [
     {
-      // reserved language variables like this, super, self, etc.
+      // Reserved language variables like this, super, self, etc.
       name: 'Variables',
       scope: [
         'variable',
@@ -922,7 +923,7 @@ export default function (colors) {
         'punctuation.definition.constant',
         'variable.other.constant',
 
-        //User-defined constant
+        // User-defined constant
         'constant.character',
         'constant.other',
       ],
@@ -955,11 +956,11 @@ export default function (colors) {
         'string.template punctuation.definition.string',
         'punctuation.definition.string',
 
-        // escape sequences like \e
+        // Escape sequences like \e
         'constant.character.escape',
       ],
       settings: {
-        foreground: colors.string.hex(),
+        foreground: colors.syntaxViolet.hex(),
       },
     },
     {
@@ -970,9 +971,9 @@ export default function (colors) {
         foreground: colors.contrastText.hex(),
       },
     },
-    // template / markup tags
+    // Template / markup tags
     {
-      // the </> of the tag & (,) in pug
+      // The </> of the tag & (,) in pug
       name: 'Meta Tag',
       scope: ['punctuation.definition.tag', 'meta.tag'],
       settings: {
@@ -989,7 +990,7 @@ export default function (colors) {
       },
     },
     {
-      // regex
+      // Regex
       name: 'RegExp String',
       scope: [
         'string.regexp',
@@ -1005,16 +1006,16 @@ export default function (colors) {
       },
     },
     {
-      // hex color
+      // Hex color
       name: 'Constant Other Color',
       scope: 'constant.other.color',
       settings: {
         foreground: colors.text.hex(),
       },
     },
-    // code languages
+    // Code languages
     {
-      // words like function, var, let, const
+      // Words like function, var, let, const
       name: 'Storage type',
       scope: [
         'storage',
@@ -1039,18 +1040,18 @@ export default function (colors) {
       },
     },
     {
-      // special words
+      // Special words
       name: 'Library (function & constant)',
       scope: [
-        // constants (magic values) provided by the language or framework/library.
+        // Constants (magic values) provided by the language or framework/library.
         'support.constant',
         'support.class.promise',
         'storage.modifier.async',
 
         'keyword.control.flow',
 
-        // mainly related to flow control like continue, while, return, etc.
-        // at rule name in css & scss & sass
+        // Mainly related to flow control like continue, while, return, etc.
+        // At rule name in css & scss & sass
         'keyword.control',
 
         'keyword.other.special-method',
@@ -1077,7 +1078,7 @@ export default function (colors) {
       },
     },
     {
-      // function names & classes names
+      // Function names & classes names
       name: 'Functions & Classes',
       scope: [
         'entity.name.function',
@@ -1108,7 +1109,7 @@ export default function (colors) {
       },
     },
     {
-      // numbers
+      // Numbers
       name: 'Number',
       scope: ['constant.numeric', 'constant.character.numeric'],
       settings: {
@@ -1131,7 +1132,7 @@ export default function (colors) {
       },
     },
     {
-      // when constant like true, false, None, null are not defined in the language
+      // When constant like true, false, None, null are not defined in the language
       name: 'Other constants',
       scope: ['constant.language'],
       settings: {
@@ -1141,7 +1142,7 @@ export default function (colors) {
     {
       name: 'Type',
       scope: [
-        // like boolean, string ...
+        // Like boolean, string ...
         'support.type',
       ],
       settings: {
@@ -1156,7 +1157,7 @@ export default function (colors) {
         'punctuation.separator',
         'meta.property-list.css.sass',
         'punctuation.accessor',
-        // dot (.) for object property e.g. object.property
+        // Dot (.) for object property e.g. object.property
         'punctuation.accessor',
 
         // ()
@@ -1197,7 +1198,7 @@ export default function (colors) {
         // ? :
         'keyword.operator.ternary',
 
-        // word new
+        // Word new
         'keyword.other.new',
       ],
       settings: {
@@ -1225,10 +1226,29 @@ export default function (colors) {
         foreground: colors.contrastText.hex(),
       },
     },
+    {
+      name: 'Decorators', // Other than typescript
+      scope: [
+        'meta.decorator punctuation.decorator',
+      ],
+      settings: {
+        foreground: colors.specialWordB.hex(),
+      },
+    },
+    {
+      // Code class Name {}
+      //            ^^^^
+      name: 'entity names',
+      scope: ['entity.name.type'],
+      settings: {
+        foreground: colors.specialWordB.hex(),
+        fontStyle: 'normal'
+      }
+    }
   ]
 
   const specialWords = [
-    // not sure about this ones
+    // Not sure about this ones
     {
       name: 'Variable Instances',
       scope: [
@@ -1312,7 +1332,7 @@ export default function (colors) {
         foreground: colors.comment.hex(),
       },
     },
-    //documentation inside comments
+    // Documentation inside comments
     {
       name: 'Data Type in commented documentation',
       scope: [
@@ -1345,7 +1365,7 @@ export default function (colors) {
     },
   ]
 
-  // languages
+  // Languages
   const styleSheets = [
     {
       name: 'css',
@@ -1529,7 +1549,7 @@ export default function (colors) {
       },
     },
     {
-      // keywords for sass
+      // Keywords for sass
       name: 'Keyword',
       scope: [
         //@ in at rules
@@ -1537,16 +1557,16 @@ export default function (colors) {
         'entity.name.tag.reference',
         'meta.at-rule keyword.control punctuation.definition',
 
-        // font-feature-values
+        // Font-feature-values
         'entity.name.tag.custom.css',
         'entity.name.tag.custom.scss',
         'entity.name.tag.custom.sass',
 
-        // function call
+        // Function call
         'support.function.sass',
         'keyword.control.interpolation.sass',
 
-        // operators
+        // Operators
         'keyword.operator.css.sass',
 
         // Sass Reserved Word
@@ -1650,7 +1670,7 @@ export default function (colors) {
     {
       name: 'SASS Interpolation',
       scope: [
-        // like #{}
+        // Like #{}
         'support.function.interpolation.sass',
         'punctuation.definition.interpolation.begin.bracket.curly.scss',
         'punctuation.definition.interpolation.end.bracket.curly.scss',
@@ -1672,7 +1692,7 @@ export default function (colors) {
     {
       name: 'Support properties',
       scope: [
-        // like .length
+        // Like .length
         'source.js support.variable.property',
         'source.ts support.variable.property',
       ],
@@ -1695,11 +1715,11 @@ export default function (colors) {
     {
       name: 'keywords',
       scope: [
-        // like static in classes
+        // Like static in classes
         'source.js storage.modifier',
         'source.ts storage.modifier',
 
-        // words like super() and extends (for classes)
+        // Words like super() and extends (for classes)
         'source.js variable.language',
         'source.ts variable.language',
       ],

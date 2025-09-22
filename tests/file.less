@@ -35,18 +35,18 @@
         text-decoration: underline;
     }
 
-    // compound selector
+    // Compound selector
     &__element,
     &--modifier {
         border: 1px;
     }
 
-    // multiple &
+    // Multiple &
     & + & {
         color: red;
     }
 
-    // changing selector order
+    // Changing selector order
     body.firefox & {
         font-weight: normal;
     }
@@ -77,17 +77,17 @@
 };
 
 #main {
-    // property value
+    // Property value
     width: @width;
 
-    // variable reference
+    // Variable reference
     color: @@color-variable-name;
 
-    // property variable
+    // Property variable
     background-color: $color;
 
-    // use detached ruleset
-    @detached-ruleset(); // parentheses required
+    // Use detached ruleset
+    @detached-ruleset(); // Parentheses required
 }
 
 // media type, feature test
@@ -160,16 +160,16 @@ d@{i}v,
 :nth-child(@{expr}),
 :not(@{div}) {
 
-    // property name
+    // Property name
     @{font}: serif;
     background-@{image}: none;
     border-@{bottom}-width: 0;
 
-    // inside strings
+    // Inside strings
     content: "@{var}";
     content: '@{var}';
 
-    // nested interpolations
+    // Nested interpolations
     content: "@{@{nested}-variable}";
 }
 
@@ -208,7 +208,7 @@ d@{i}v,
 body {
     width: (1px + (2em - 3rem)) * (4 / 5vh);
 
-    // unary negation
+    // Unary negation
     z-index: -@z-index;
     margin-bottom: -(@base * 2);
 }
@@ -222,10 +222,10 @@ body {
     // Less string format function
     content: %("1 plus 2 is %d", 1 + 2);
 
-    // single line comments not parsed inside url()
+    // Single line comments not parsed inside url()
     background: url(http://example.com/styles.css);
 
-    // semicolons separators
+    // Semicolons separators
     color: hsl(90; 100%; 50%);
 }
 
@@ -241,10 +241,10 @@ body {
 }
 
 #main {
-    // inside ruleset
+    // Inside ruleset
     &:extend(#board:nth-child(2n+3));
 
-    // all keyword
+    // All keyword
     &:extend(div ~ .inline[name="foo"] all);
 }
 
@@ -254,10 +254,10 @@ body {
  */
 
 code {
-    // with comma
+    // With comma
     box-shadow+: 0 0 20px black;
 
-    // with space
+    // With space
     transform+_: scale(2);
 }
 
@@ -272,15 +272,15 @@ code {
 }
 
 // with parameters
-.box(@margin, @padding) { // comma separated
+.box(@margin, @padding) { // Comma separated
     margin: @margin;
     padding: @padding;
 }
-.box(@margin; @padding) { // semicolon separated
+.box(@margin; @padding) { // Semicolon separated
     margin: @margin;
     padding: @padding;
 }
-.box(@margin: 10px; @padding: 10px) { // default parameters
+.box(@margin: 10px; @padding: 10px) { // Default parameters
     margin: @margin;
     padding: @padding;
 }
@@ -292,8 +292,8 @@ code {
 
 // variable arguments
 .mixin(...) {} // 0 or more arguments
-.mixin(@a; ...) {} // at least 1 argument
-.mixin(@a; @rest...) {} // remaining arguments bound to variable
+.mixin(@a; ...) {} // At least 1 argument
+.mixin(@a; @rest...) {} // Remaining arguments bound to variable
 
 // with pattern
 .mixin(dark; 5px) {}
@@ -301,38 +301,38 @@ code {
 
 // mixin call
 #main {
-    // existing styles
+    // Existing styles
     #header;
     .card-style;
 
-    // existing styles with parentheses (optional),
-    // or mixins with parentheses and no required parameters
+    // Existing styles with parentheses (optional),
+    // Or mixins with parentheses and no required parameters
     #header();
     .card-style();
 
-    // namespaced styles
+    // Namespaced styles
     #outer > .inner;
     #outer .inner;
     #outer.inner;
 
-    // important modifier
+    // Important modifier
     #header !important;
     .card-style() !important;
     #outer > .inner !important;
 
-    // with parameters
-    .box(20px, 10px); // comma separated
-    .box(20px; 10px); // semicolon separated
-    .box(@padding: 10px; @margin: 20px); // named parameters
-    .box(@list...); // expands values in @list as arguments
-    .mixin({ // detached ruleset
+    // With parameters
+    .box(20px, 10px); // Comma separated
+    .box(20px; 10px); // Semicolon separated
+    .box(@padding: 10px; @margin: 20px); // Named parameters
+    .box(@list...); // Expands values in @list as arguments
+    .mixin({ // Detached ruleset
         color: red;
         div {
             color: blue;
         }
     });
 
-    // with pattern
+    // With pattern
     .mixin(dark; 5px);
     .mixin(light; #000);
 }
@@ -388,11 +388,11 @@ button when (@my-option = true) {
 
 // @import
 @import "@{themes}/tidal-wave.less";
-@import (optional, reference) "foo.less" screen and (orientation: landscape), print; // import options
+@import (optional, reference) "foo.less" screen and (orientation: landscape), print; // Import options
 
 // @plugin
 @plugin 'my-plugin';
-@plugin (options) 'my-plugin'; // plugin options
+@plugin (options) 'my-plugin'; // Plugin options
 
 // @plugin function call
 my-plugin();
@@ -406,16 +406,16 @@ div {
  */
 
 .declarations-or-selectors {
-    // declarations
+    // Declarations
     display:block;
     font-family:arial;
     @{property}:block;
 
-    // incorrectly highlighted declarations
+    // Incorrectly highlighted declarations
     display:block
     ;
 
-    // selectors
+    // Selectors
     input:focus {
         opacity: 0.5;
     }

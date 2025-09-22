@@ -22,11 +22,11 @@ reduce(int size, int threads, int blocks,
 	dim3 dimBlock(threads, 1, 1);
 	dim3 dimGrid(blocks, 1, 1);
 
-	// when there is only one warp per block, we need to allocate two warps
-	// worth of shared memory so that we don't index shared memory out of bounds
+	// When there is only one warp per block, we need to allocate two warps
+	// Worth of shared memory so that we don't index shared memory out of bounds
 	int smemSize = (threads <= 32) ? 2 * threads * sizeof(T) : threads * sizeof(T);
 
-	// choose which of the optimized versions of reduction to launch
+	// Choose which of the optimized versions of reduction to launch
 	switch (whichKernel)
 	{
 		case 0:
