@@ -25,9 +25,9 @@ export default function (colors) {
     // Overall foreground color for error messages
     errorForeground: colors.danger.hex(),
 
-    'icon.foreground': colors.text.hex(),// The default color for icons in the workbench.
+    'icon.foreground': colors.text.hex(), // The default color for icons in the workbench.
 
-    'sash.hoverBorder': colors.principal_3.hex(),// The hover border color for draggable borders.
+    'sash.hoverBorder': colors.principal_3.hex(), // The hover border color for draggable borders.
 
     'window.activeBorder': colors.principal.hex(), // Border color for the active (focused) window.
     'window.inactiveBorder': colors.principal.hex(), // Border color for the inactive (unfocused) windows.
@@ -44,10 +44,10 @@ export default function (colors) {
     'textCodeBlock.background': colors.principal_0.hex(),
     // Foreground color for preformatted text segments.
     'textPreformat.foreground': colors.text.hex(),
-   // Color for text separators.
+    // Color for text separators.
     'textSeparator.foreground': colors.principal_0.hex(),
 
-   // Color of the editor selection.
+    // Color of the editor selection.
     'editor.selectionBackground': colors.selection_4.hex(),
     'editor.selectionForeground': colors.text.hex(),
     // When you select part of a word and VSCode highlight the whole word
@@ -63,7 +63,7 @@ export default function (colors) {
     // When you have you pointer over a word
     'editor.hoverHighlightBackground': colors.selection_1.hex(),
 
-   // Color of the selection in an inactive editor.
+    // Color of the selection in an inactive editor.
     'editor.inactiveSelectionBackground': colors.selection_1.hex(),
 
     // Color of the line on which the cursor is located
@@ -86,7 +86,7 @@ export default function (colors) {
     'editor.rangeHighlightBackground': colors.selection_0.hex(),
     'editor.rangeHighlightForeground': colors.text.hex(),
 
-   // Placeholder de inputs del editor
+    // Placeholder de inputs del editor
     'editor.placeholder.foreground': colors.principal_4.hex(),
 
     // 'editor.compositionBorder': colors.testB.hex(),
@@ -105,10 +105,10 @@ export default function (colors) {
     // VSCode ruler (when activated in the settings by "editor.rulers": [...])
     'editorRuler.foreground': colors.principal_1.hex(),
 
-   // VSCode codelens
+    // VSCode codelens
     'editorCodeLens.foreground': colors.infoLight.hex(),
 
-   // Editor states
+    // Editor states
     'editorError.foreground': colors.danger.hex(),
     'editorError.border': null,
     'editorWarning.foreground': colors.warning.hex(),
@@ -480,7 +480,7 @@ export default function (colors) {
     'editor.findMatchForeground': null,
     'editor.findMatchHighlightForeground': null,
 
-   // When <ctrl> + <click> on a symbol`
+    // When <ctrl> + <click> on a symbol`
     'editor.symbolHighlightBackground': colors.principal_0.hex(),
     'editor.symbolHighlightBorder': colors.success.hex(),
 
